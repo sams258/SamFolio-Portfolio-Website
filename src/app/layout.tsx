@@ -1,12 +1,24 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
+    <html lang="en">
+      <head />
+      <body>
+        {/* Header at the top */}
+        <Header />
+
+        {/* Main content area */}
+        <main>{children}</main>
+
+        {/* Footer at the bottom */}
+        <Footer />
+      </body>
+    </html>
   );
 }
