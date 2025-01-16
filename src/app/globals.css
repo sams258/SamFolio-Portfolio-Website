@@ -2,20 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ========================================
+   Base Styling
+======================================== */
+html, body {
+  @apply bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 text-gray-100 font-sans leading-relaxed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+a {
+  @apply text-blue-400 hover:text-blue-300 transition-all;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold leading-tight;
+}
+
+p {
+  @apply mb-4;
+}
+
+ul {
+  @apply list-disc list-inside pl-4;
+}
+
+button {
+  @apply bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition-all;
+}
+
+input, textarea {
+  @apply bg-gray-800 border border-gray-700 text-white rounded px-4 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:outline-none;
+}
+
+/* ========================================
+   Modern Glassmorphism
+======================================== */
+.glass {
+  @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-lg p-6 shadow-lg;
+}
+
+/* ========================================
+   Neumorphic Effects
+======================================== */
+.neumorphic {
+  @apply bg-gray-800 rounded-lg shadow-md;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
+              -8px -8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.neumorphic-hover:hover {
+  box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.6),
+              inset -8px -8px 16px rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   Utility Classes
+======================================== */
+.container {
+  @apply max-w-screen-xl mx-auto px-4;
+}
+
+.card {
+  @apply bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow;
+}
+
+.card img {
+  @apply rounded-md mb-4;
+}
+
+/* ========================================
+   Hero Section
+======================================== */
+.hero {
+  @apply flex items-center justify-center h-screen text-center;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+              url('/path-to-your-hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  @apply text-4xl sm:text-6xl font-extrabold text-white;
+}
+
+.hero p {
+  @apply text-lg sm:text-xl text-gray-300 mt-4;
+}
+
+/* ========================================
+   Footer Styling
+======================================== */
+.footer {
+  @apply bg-gray-800 py-6 text-center text-sm text-gray-400;
+}
+
+.footer a {
+  @apply text-blue-400 hover:text-blue-300;
 }

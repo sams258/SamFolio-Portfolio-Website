@@ -1,0 +1,17 @@
+[
+    {
+      "id": "1",
+      "title": "Project One",
+      "description": "A brief description of Project One.",
+      "image": "/path/to/image1.jpg",
+      "url": "https://example.com/project1"
+    },
+    {
+      "id": "2",
+      "title": "Project Two",
+      "description": "A brief description of Project Two.",
+      "image": "/path/to/image2.jpg",
+      "url": "https://example.com/project2"
+    }
+  ]
+  
