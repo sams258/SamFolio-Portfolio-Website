@@ -20,7 +20,9 @@ const HeroSection: React.FC = () => {
             <br />a dynamic and innovative{" "}
             <span className="text-orange-400">professional</span>.
           </h1>
-          <p className="text-teal-600 font-bold mb-6">Where digitalization meets innovation.</p>
+          <p className="text-teal-600 font-bold mb-6">
+          Digitalizing the world, one bit at a time!.
+          </p>
           <div className="space-x-4">
             <a
               href="#projects"

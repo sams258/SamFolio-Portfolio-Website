@@ -3,15 +3,22 @@
       "id": "1",
       "title": "Project One",
       "description": "A brief description of Project One.",
-      "image": "/path/to/image1.jpg",
+      "image": "/project1.jpg",
       "url": "https://example.com/project1"
     },
     {
       "id": "2",
       "title": "Project Two",
       "description": "A brief description of Project Two.",
-      "image": "/path/to/image2.jpg",
+      "image": "/project2.jpg",
       "url": "https://example.com/project2"
+    },
+    {
+      "id": "3",
+      "title": "Project Three",
+      "description": "A brief description of Project Three.",
+      "image": "/project3.jpg",
+      "url": "https://example.com/project3"
     }
   ]
   

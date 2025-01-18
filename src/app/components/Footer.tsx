@@ -29,10 +29,11 @@ const Footer: React.FC = () => {
             className="flex items-center hover:text-teal-400"
           >
             <Image
-              src="/nextjs-logo.svg" // Replace with your actual logo file path
+              src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" // URL to Next.js white horizontal logo
               alt="Next.js Logo"
-              width={100}
-              height={20}
+              width={50} // Adjust width as needed
+              height={10} // Adjust height as needed
+              unoptimized={true}
             />
             <span className="ml-2 text-sm">Made by Next.js</span>
           </a>
