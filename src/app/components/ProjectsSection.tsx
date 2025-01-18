@@ -9,7 +9,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <motion.section
       id="projects"
-      className="h-screen flex justify-center items-center"
+      className="md:h-screen h-auto flex justify-center items-center"
       initial={{ y: 50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
