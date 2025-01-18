@@ -1,4 +1,6 @@
-import { useParams } from 'next/navigation';
+"use client";
+
+import { useParams } from "next/navigation";
 
 const projects = [
   { id: "1", title: "Project One", description: "Description for Project One" },
