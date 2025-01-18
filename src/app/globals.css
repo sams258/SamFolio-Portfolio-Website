@@ -15,7 +15,17 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures body height matches viewport */
+  scroll-behavior: smooth;
   @apply bg-gradient-to-tr from-grey-dark via-gray-800 to-grey text-gray-100 font-sans leading-relaxed;
+}
+
+body {
+}
+
+section {
 }
 
 a {
@@ -67,8 +77,3 @@ button {
 .footer a {
   @apply text-orange hover:text-orange-light;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-

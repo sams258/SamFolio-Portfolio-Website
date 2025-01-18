@@ -8,7 +8,7 @@ import "../globals.css";
 const HeroSection: React.FC = () => {
   return (
     <motion.section
-      className="h screen relative bg-white/20 backdrop-blur-md rounded-xl shadow-lg py-20 px-10"
+      className="md:h-screen relative bg-white/20 backdrop-blur-md rounded-xl shadow-lg pt-20 md:py-20 lg:pt-32 lg:pb-20 px-10"
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}

@@ -1,6 +1,9 @@
 import React from "react";
 import "../globals.css";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer: React.FC = () => {
   return (
@@ -8,16 +11,25 @@ const Footer: React.FC = () => {
       <div className="container mx-auto text-center">
         <p className="text-sm">© 2025 samFolio. All rights reserved.</p>
         <div className="flex justify-center space-x-6 mt-4">
-          <a href="https://github.com" className="hover:text-teal-400">
+          <a
+            href="https://github.com/sams258"
+            className="flex items-center hover:text-teal-400"
+          >
+            <FontAwesomeIcon icon={faGithub} className="mr-2" />
             GitHub
           </a>
-          <a href="https://linkedin.com" className="hover:text-teal-400">
+          <a
+            href="https://www.linkedin.com/in/sam-saati/"
+            className="flex items-center hover:text-teal-400"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
             LinkedIn
           </a>
           <a
-            href="mailto:youremail@example.com"
-            className="hover:text-teal-400"
+            href="mailto:sam4studies@gmail.com"
+            className="flex items-center hover:text-teal-400"
           >
+            <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
             Email
           </a>
         </div>
@@ -29,10 +41,10 @@ const Footer: React.FC = () => {
             className="flex items-center hover:text-teal-400"
           >
             <Image
-              src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" // URL to Next.js white horizontal logo
+              src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png"
               alt="Next.js Logo"
-              width={50} // Adjust width as needed
-              height={10} // Adjust height as needed
+              width={50}
+              height={10}
               unoptimized={true}
             />
             <span className="ml-2 text-sm">Made by Next.js</span>
