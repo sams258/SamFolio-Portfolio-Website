@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useParams } from 'next/navigation';
 
 const projects = [
   { id: "1", title: "Project One", description: "Description for Project One" },
@@ -6,8 +6,8 @@ const projects = [
 ];
 
 export default function ProjectPage() {
-  const { query } = useRouter();
-  const project = projects.find((p) => p.id === query.id);
+  const { id } = useParams();
+  const project = projects.find((p) => p.id === id);
 
   if (!project) return <p>Project not found.</p>;
 

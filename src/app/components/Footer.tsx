@@ -1,10 +1,45 @@
-export default function Footer() {
-    return (
-      <footer className="bg-gray-800 text-white py-4 mt-8">
-        <div className="container mx-auto text-center">
-          <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+import React from "react";
+import "../globals.css";
+import Image from "next/image";
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="bg-gray-900 text-white py-6">
+      <div className="container mx-auto text-center">
+        <p className="text-sm">© 2025 samFolio. All rights reserved.</p>
+        <div className="flex justify-center space-x-6 mt-4">
+          <a href="https://github.com" className="hover:text-teal-400">
+            GitHub
+          </a>
+          <a href="https://linkedin.com" className="hover:text-teal-400">
+            LinkedIn
+          </a>
+          <a
+            href="mailto:youremail@example.com"
+            className="hover:text-teal-400"
+          >
+            Email
+          </a>
         </div>
-      </footer>
-    );
-  }
-  
+        <div className="flex justify-center items-center mt-6 space-x-2">
+          <a
+            href="https://nextjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:text-teal-400"
+          >
+            <Image
+              src="/nextjs-logo.svg" // Replace with your actual logo file path
+              alt="Next.js Logo"
+              width={100}
+              height={20}
+            />
+            <span className="ml-2 text-sm">Made by Next.js</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

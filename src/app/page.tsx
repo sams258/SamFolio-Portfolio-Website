@@ -1,3 +1,19 @@
-export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello, World!</h1>;
-}
+import React from "react";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import ProjectsSection from "./components/ProjectsSection";
+import "./globals.css";
+
+const HomePage: React.FC = () => {
+  return (
+    <>
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+      </main>
+    </>
+  );
+};
+
+export default HomePage;
