@@ -20,14 +20,12 @@ const Header: React.FC = () => {
                 <li><a href="#" className="hover:text-teal-600">Home</a></li>
                 <li><a href="#about" className="hover:text-teal-600">About</a></li>
                 <li><a href="#projects" className="hover:text-teal-600">Projects</a></li>
-                <li><a href="#contact" className="hover:text-teal-600">Contact</a></li>
               </>
             ) : (
               <>
                 <li><Link href="/" className="hover:text-teal-600">Home</Link></li>
                 <li><Link href="/#about" className="hover:text-teal-600">About</Link></li>
                 <li><Link href="/#projects" className="hover:text-teal-600">Projects</Link></li>
-                <li><Link href="/#contact" className="hover:text-teal-600">Contact</Link></li>
               </>
             )}
           </ul>

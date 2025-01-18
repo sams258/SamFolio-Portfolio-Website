@@ -8,9 +8,9 @@ import "../globals.css";
 const HeroSection: React.FC = () => {
   return (
     <motion.section
-      className="relative bg-white/20 backdrop-blur-md rounded-xl shadow-lg py-20 px-10"
+      className="h screen relative bg-white/20 backdrop-blur-md rounded-xl shadow-lg py-20 px-10"
       initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center">
@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
             <span className="text-orange-400">professional</span>.
           </h1>
           <p className="text-teal-600 font-bold mb-6">
-          Digitalizing the world, one bit at a time!.
+            Digitalizing the world, one bit at a time!.
           </p>
           <div className="space-x-4">
             <a

@@ -7,7 +7,13 @@ import "../globals.css";
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section id="projects" className="py-16">
+    <motion.section
+      id="projects"
+      className="h-screen flex justify-center items-center"
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-white text-center mb-12">
           Featured Projects
@@ -62,7 +68,7 @@ const ProjectsSection: React.FC = () => {
           </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
