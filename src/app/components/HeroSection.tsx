@@ -8,17 +8,16 @@ import "../globals.css";
 const HeroSection: React.FC = () => {
   return (
     <motion.section
-      className="md:h-screen relative bg-white/20 backdrop-blur-md rounded-xl shadow-lg pt-20 md:py-20 lg:pt-32 lg:pb-20 px-10"
+      className="min-h-screen relative bg-white/20 backdrop-blur-md rounded-xl shadow-lg pt-20 md:py-20 lg:pt-32 lg:pb-20 px-6 overflow-hidden"
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
-        <div className="text-center md:text-left md:w-1/2 sm:pl-4 md:pl-28">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div className="text-center lg:text-left lg:w-1/2 sm:pl-4 lg:pl-28">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4">
             Hi, I am <span className="text-orange-400">Sam</span>,
-            <br />a dynamic and innovative{" "}
-            <span className="text-orange-400">professional</span>.
+            <br />a dynamic and innovative <span className="text-orange-400">professional</span>.
           </h1>
           <p className="text-teal-600 font-bold mb-6">
             Digitalizing the world, one bit at a time!.
@@ -38,14 +37,14 @@ const HeroSection: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
+        <div className="mt-10 lg:mt-0 lg:w-1/2 flex justify-center">
           <Image
             src="/hero-image.jpg"
             alt="Hero Image"
             width={600}
             height={400}
             priority
-            className="rounded-lg shadow-lg w-[600px] h-[400px]"
+            className="rounded-lg shadow-lg max-w-full object-cover"
           />
         </div>
       </div>
