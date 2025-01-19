@@ -52,7 +52,7 @@ const Header: React.FC = () => {
             samFolio
           </Link>
           {/* Social Icons */}
-          <div className="flex space-x-4 text-orange-400">
+          <div className="flex space-x-2 text-orange-400">
             <Link
               href="https://github.com/sams258"
               target="_blank"
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
           </div>
         </div>
         <nav>
-  <ul className="flex space-x-6 md:space-x-4 sm:space-x-2 text-gray-700">
+  <ul className="flex space-x-4 md:space-x-4 sm:space-x-2 text-gray-700">
     {isMainPage ? (
       <>
         <li>
