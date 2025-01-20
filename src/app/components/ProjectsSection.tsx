@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import "../globals.css";
 
@@ -15,7 +16,7 @@ const ProjectsSection: React.FC = () => {
       transition={{ duration: 0.8 }}
     >
       <div className="container mx-auto px-4">
-        <h2 className="sm: pt-20 sm:pb-10 text-3xl font-bold text-white text-center mb-6 md:mb-12">
+        <h2 className="sm: pt-20 sm:pb-10 text-3xl font-bold text-white text-center mb-6 md:mb-2">
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -101,6 +102,11 @@ const ProjectsSection: React.FC = () => {
               laundry machines and manage their bookings.👕
             </p>
           </motion.div>
+        </div>
+        <div className="text-center mt-4">
+          <Link href="/github" className="text-teal-500 font-medium text-lg hover:text-teal-600 mt-4">
+            More projects...
+          </Link>
         </div>
       </div>
     </motion.section>

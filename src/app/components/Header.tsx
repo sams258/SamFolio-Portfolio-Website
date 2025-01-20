@@ -35,10 +35,15 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     if (isMainPage) {
+      // Reset activeSection when returning to the main page
+      setActiveSection("home");
+
+      // Add scroll listener
       window.addEventListener("scroll", handleScroll);
+
       return () => window.removeEventListener("scroll", handleScroll);
     }
-  }, [isMainPage]);
+  }, [isMainPage]); // Runs when pathname changes
 
   return (
     <header className="bg-white shadow fixed top-0 w-full z-50">
@@ -78,67 +83,67 @@ const Header: React.FC = () => {
           </div>
         </div>
         <nav>
-  <ul className="flex space-x-4 md:space-x-4 sm:space-x-2 text-gray-700">
-    {isMainPage ? (
-      <>
-        <li>
-          <Link
-            href="#"
-            className={`hover:text-teal-600 ${
-              activeSection === "home"
-                ? "text-teal-600 font-semibold"
-                : ""
-            }`}
-          >
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="#about"
-            className={`hover:text-teal-600 ${
-              activeSection === "about"
-                ? "text-teal-600 font-semibold"
-                : ""
-            }`}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="#projects"
-            className={`hover:text-teal-600 ${
-              activeSection === "projects"
-                ? "text-teal-600 font-semibold"
-                : ""
-            }`}
-          >
-            Projects
-          </Link>
-        </li>
-      </>
-    ) : (
-      <>
-        <li>
-          <Link href="/" className="hover:text-teal-600">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="/#about" className="hover:text-teal-600">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link href="/#projects" className="hover:text-teal-600">
-            Projects
-          </Link>
-        </li>
-      </>
-    )}
-  </ul>
-</nav>
+          <ul className="flex space-x-4 md:space-x-4 sm:space-x-2 text-gray-700">
+            {isMainPage ? (
+              <>
+                <li>
+                  <Link
+                    href="#"
+                    className={`hover:text-teal-600 ${
+                      activeSection === "home"
+                        ? "text-teal-600 font-semibold"
+                        : ""
+                    }`}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#about"
+                    className={`hover:text-teal-600 ${
+                      activeSection === "about"
+                        ? "text-teal-600 font-semibold"
+                        : ""
+                    }`}
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#projects"
+                    className={`hover:text-teal-600 ${
+                      activeSection === "projects"
+                        ? "text-teal-600 font-semibold"
+                        : ""
+                    }`}
+                  >
+                    Projects
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link href="/" className="hover:text-teal-600">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#about" className="hover:text-teal-600">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#projects" className="hover:text-teal-600">
+                    Projects
+                  </Link>
+                </li>
+              </>
+            )}
+          </ul>
+        </nav>
       </div>
     </header>
   );
