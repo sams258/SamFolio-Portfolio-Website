@@ -1,7 +1,8 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import './globals.css';
+import { Analytics } from "@vercel/analytics/react"
 
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -17,7 +18,7 @@ export default function RootLayout({
 
         {/* Main content area */}
         <main>{children}</main>
-
+        <Analytics />
         {/* Footer at the bottom */}
         <Footer />
       </body>

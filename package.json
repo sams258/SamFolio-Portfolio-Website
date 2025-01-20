@@ -16,6 +16,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.10",
     "@types/tailwindcss": "^3.1.0",
+    "@vercel/analytics": "^1.4.1",
     "framer-motion": "^11.18.1",
     "next": "^15.1.4",
     "nodemailer": "^6.9.16",
