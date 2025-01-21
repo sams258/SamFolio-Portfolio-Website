@@ -49,6 +49,12 @@ button {
   @apply bg-teal hover:bg-orange text-white font-medium py-2 px-4 rounded transition-all;
 }
 
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* ========================================
    Glassmorphism & Neumorphism
 ======================================== */

@@ -31,6 +31,7 @@ const ProjectsSection: React.FC = () => {
               width={350}
               height={219}
               quality={100}
+              unoptimized={true}
               className="rounded mb-4"
             />
             <h3
@@ -57,6 +58,7 @@ const ProjectsSection: React.FC = () => {
               width={350}
               height={219}
               quality={100}
+              unoptimized={true}
               className="rounded mb-4"
             />
             <h3
@@ -86,6 +88,7 @@ const ProjectsSection: React.FC = () => {
               width={350}
               height={219}
               quality={100}
+              unoptimized={true}
               className="rounded mb-4"
             />
             <h3
@@ -104,7 +107,10 @@ const ProjectsSection: React.FC = () => {
           </motion.div>
         </div>
         <div className="text-center mt-4">
-          <Link href="/github" className="text-teal-500 font-medium text-lg hover:text-teal-600 mt-4">
+          <Link
+            href="/github"
+            className="text-teal-500 font-medium text-lg hover:text-teal-600 mt-4"
+          >
             More projects...
           </Link>
         </div>
