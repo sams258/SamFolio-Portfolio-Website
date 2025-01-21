@@ -45,6 +45,7 @@ const Footer: React.FC = () => {
               alt="Next.js Logo"
               width={50}
               height={10}
+              quality={100}
               unoptimized={true}
             />
             <span className="ml-2 text-sm">Made by Next.js</span>

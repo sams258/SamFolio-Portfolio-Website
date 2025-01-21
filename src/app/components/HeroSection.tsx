@@ -17,7 +17,8 @@ const HeroSection: React.FC = () => {
         <div className="text-center lg:text-left lg:w-1/2 sm:pl-4 lg:pl-28">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">
             Hi, I am <span className="text-orange-400">Sam</span>,
-            <br />a dynamic and innovative <span className="text-orange-400">professional</span>.
+            <br />a dynamic and innovative{" "}
+            <span className="text-orange-400">professional</span>.
           </h1>
           <p className="text-teal-600 font-bold mb-6">
             Digitalizing the world, one bit at a time!.
@@ -30,10 +31,11 @@ const HeroSection: React.FC = () => {
               View My Work
             </a>
             <a
-              href="mailto:sam4studies@gmail.com"
+              href="/samscv.pdf"
+              download="samscv.pdf"
               className="px-6 py-3 bg-white border-2 border-orange-400 text-orange-400 font-bold rounded-lg shadow-md hover:bg-orange-400 hover:text-white hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-orange-200"
             >
-              Contact Me
+              Download CV
             </a>
           </div>
         </div>
