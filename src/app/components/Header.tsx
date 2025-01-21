@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "../globals.css";
 
 const Header: React.FC = () => {
@@ -13,6 +13,7 @@ const Header: React.FC = () => {
   const isMainPage = pathname === "/";
 
   const [activeSection, setActiveSection] = useState<string>("home");
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const handleScroll = () => {
     const sections = ["home", "about", "projects"];
@@ -21,7 +22,7 @@ const Header: React.FC = () => {
       return element ? element.offsetTop : 0;
     });
 
-    const scrollPos = window.scrollY + 200; // Adjust for the sticky navbar height
+    const scrollPos = window.scrollY + 200;
     const active = sections.find(
       (_, i) =>
         scrollPos >= offsets[i] &&
@@ -35,29 +36,26 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     if (isMainPage) {
-      // Reset activeSection when returning to the main page
       setActiveSection("home");
-
-      // Add scroll listener
       window.addEventListener("scroll", handleScroll);
-
       return () => window.removeEventListener("scroll", handleScroll);
     }
-  }, [isMainPage]); // Runs when pathname changes
+  }, [isMainPage]);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
-    <header className="bg-white shadow fixed top-0 w-full z-50">
+    <header className="bg-white glassnav shadow fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex items-center space-x-4">
-          {/* Clickable samFolio */}
           <Link
             href="/"
-            className="text-2xl font-bold text-teal-600 hover:text-orange-400 transition-colors"
+            className="text-2xl font-bold text-teal-500 hover:text-orange-400 transition-colors"
           >
             samFolio
           </Link>
-          {/* Social Icons */}
-          <div className="flex space-x-2 text-orange-400">
+          {/* Social Icons for Medium and Large Screens */}
+          <div className="hidden md:flex space-x-2 text-orange-400">
             <Link
               href="https://github.com/sams258"
               target="_blank"
@@ -82,17 +80,25 @@ const Header: React.FC = () => {
             </Link>
           </div>
         </div>
-        <nav>
-          <ul className="flex space-x-4 md:space-x-4 sm:space-x-2 text-gray-700">
+
+        {/* Burger Menu Button */}
+        <button
+          className="md:hidden text-orange-400"
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="lg" />
+        </button>
+
+        {/* Navbar for Medium and Larger Screens */}
+        <nav className="hidden md:block">
+          <ul className="flex space-x-4 text-gray-700">
             {isMainPage ? (
               <>
                 <li>
                   <Link
                     href="#"
                     className={`hover:text-teal-600 ${
-                      activeSection === "home"
-                        ? "text-teal-600 font-semibold"
-                        : ""
+                      activeSection === "home" ? "text-teal-500 font-semibold" : ""
                     }`}
                   >
                     Home
@@ -101,7 +107,7 @@ const Header: React.FC = () => {
                 <li>
                   <Link
                     href="#about"
-                    className={`hover:text-teal-600 ${
+                    className={`hover:text-teal-500 ${
                       activeSection === "about"
                         ? "text-teal-600 font-semibold"
                         : ""
@@ -113,7 +119,7 @@ const Header: React.FC = () => {
                 <li>
                   <Link
                     href="#projects"
-                    className={`hover:text-teal-600 ${
+                    className={`hover:text-teal-500 ${
                       activeSection === "projects"
                         ? "text-teal-600 font-semibold"
                         : ""
@@ -144,6 +150,103 @@ const Header: React.FC = () => {
             )}
           </ul>
         </nav>
+
+        {/* Burger Menu for Small Screens */}
+        {menuOpen && (
+          <nav className="absolute glass1 top-16 left-0 w-full bg-white shadow-md md:hidden">
+            <ul className="flex flex-col space-y-4 text-gray-700 p-4">
+              {isMainPage ? (
+                <>
+                  <li>
+                    <Link
+                      href="#"
+                      className={`hover:text-teal-600 ${
+                        activeSection === "home"
+                          ? "text-teal-400 font-semibold"
+                          : ""
+                      }`}
+                      onClick={closeMenu}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#about"
+                      className={`hover:text-teal-600 ${
+                        activeSection === "about"
+                          ? "text-teal-400 font-semibold"
+                          : ""
+                      }`}
+                      onClick={closeMenu}
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#projects"
+                      className={`hover:text-teal-600 ${
+                        activeSection === "projects"
+                          ? "text-teal-400 font-semibold"
+                          : ""
+                      }`}
+                      onClick={closeMenu}
+                    >
+                      Projects
+                    </Link>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li>
+                    <Link href="/" className="hover:text-teal-600" onClick={closeMenu}>
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#about" className="hover:text-teal-600" onClick={closeMenu}>
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#projects" className="hover:text-teal-600" onClick={closeMenu}>
+                      Projects
+                    </Link>
+                  </li>
+                </>
+              )}
+              {/* Social Icons for Small Screens */}
+              <li className="mt-4 border-t pt-4">
+                <p className="text-teal-400 font-medium mb-2">Get in Touch</p>
+                <div className="flex space-x-4 text-orange-400">
+                  <Link
+                    href="https://github.com/sams258"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-teal-600"
+                  >
+                    <FontAwesomeIcon icon={faGithub} size="lg" />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/sam-saati/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-teal-600"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                  </Link>
+                  <Link
+                    href="mailto:sam4studies@gmail.com"
+                    className="hover:text-teal-600"
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                  </Link>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        )}
       </div>
     </header>
   );
