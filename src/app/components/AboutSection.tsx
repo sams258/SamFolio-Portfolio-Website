@@ -18,15 +18,11 @@ const AboutSection: React.FC = () => {
       >
         <h2 className="text-3xl font-bold text-orange-400 mb-6">About Me</h2>
         <p className="text-lg text-gray-600">
-          As a dynamic and innovative professional with an ongoing B.Sc. in
-          Computer Science, combined with a strong background in digital media &
-          digital marketing, I am eager to leverage my comprehensive skills in
-          technology and digital media within a multinational company. My goal
-          is to contribute to cutting-edge digital solutions, optimizing digital
-          marketing strategies, and driving technological innovation. My
-          commitment to continuous learning and adaptation in the rapidly
-          evolving tech landscape positions me to meaningfully contribute to and
-          thrive in challenging and rewarding environments.
+        As a Computer Science student nearing the completion of my B.Sc., I bring a mix of technical knowledge and practical experience in digital media and marketing. My journey back to university in 2022 marked a major personal and professional shift, requiring determination and resilience. This has shaped me into a focused and resourceful individual, ready to take on new challenges.
+
+With a background in creating content, analyzing audience engagement, and managing projects, I’ve developed a solid understanding of how technology and marketing intersect. My hands-on experience with programming, user experience design, and digital tools allows me to approach problems with both creativity and logic. Additionally, I’ve built a strong foundation in managing data, exploring its potential for meaningful insights, and applying it to real-world problems.
+
+I aspire to work in a multinational environment where I can contribute to innovative solutions and help refine digital strategies that make a measurable impact. My passion for learning and embracing change keeps me driven to improve and adapt, whether it’s by mastering new tools, exploring cutting-edge trends, or collaborating with diverse teams. I thrive in environments where technology meets creativity, and I look forward to making a meaningful contribution to both.
         </p>
       </motion.div>
     </section>
