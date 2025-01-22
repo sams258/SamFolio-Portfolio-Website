@@ -19,6 +19,9 @@ export default function GitHubPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+
+    window.scrollTo(0, 0);
+    
     const fetchProjects = async () => {
       try {
         const res = await fetch("/api/github");
@@ -45,7 +48,7 @@ export default function GitHubPage() {
       transition={{ duration: 1 }}
     >
       <div className="container mx-auto py-10 px-4">
-        <h1 className="text-3xl font-bold text-center text-teal-500 mb-6">
+        <h1 className="text-3xl font-bold text-center text-teal-500 mt-6 mb-6">
           My GitHub Projects
         </h1>
         {error ? (
@@ -76,6 +79,7 @@ export default function GitHubPage() {
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
+                    size="lg"
                     className=" text-orange-400 mr-2"
                   />{" "}
                   View on GitHub →

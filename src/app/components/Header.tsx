@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -48,11 +49,15 @@ const Header: React.FC = () => {
     <header className="bg-white glassnav shadow fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex items-center space-x-4">
-          <Link
-            href="/"
-            className="text-2xl font-bold text-teal-500 hover:text-orange-400 transition-colors"
-          >
-            samFolio
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="samFolio Logo"
+              width={186}
+              height={25}
+              className="hover:opacity-80 transition-opacity"
+              priority
+            />
           </Link>
           {/* Social Icons for Medium and Large Screens */}
           <div className="hidden md:flex space-x-2 text-orange-400">
@@ -83,10 +88,10 @@ const Header: React.FC = () => {
 
         {/* Burger Menu Button */}
         <button
-          className="md:hidden text-orange-400"
+          className="md:hidden bg-transparent text-orange-400 z-10"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
-          <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="lg" />
+          <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="xl" />
         </button>
 
         {/* Navbar for Medium and Larger Screens */}
@@ -98,7 +103,9 @@ const Header: React.FC = () => {
                   <Link
                     href="#"
                     className={`hover:text-teal-600 ${
-                      activeSection === "home" ? "text-teal-500 font-semibold" : ""
+                      activeSection === "home"
+                        ? "text-teal-500 font-semibold"
+                        : ""
                     }`}
                   >
                     Home
@@ -200,17 +207,29 @@ const Header: React.FC = () => {
               ) : (
                 <>
                   <li>
-                    <Link href="/" className="hover:text-teal-600" onClick={closeMenu}>
+                    <Link
+                      href="/"
+                      className="hover:text-teal-600"
+                      onClick={closeMenu}
+                    >
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link href="/#about" className="hover:text-teal-600" onClick={closeMenu}>
+                    <Link
+                      href="/#about"
+                      className="hover:text-teal-600"
+                      onClick={closeMenu}
+                    >
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link href="/#projects" className="hover:text-teal-600" onClick={closeMenu}>
+                    <Link
+                      href="/#projects"
+                      className="hover:text-teal-600"
+                      onClick={closeMenu}
+                    >
                       Projects
                     </Link>
                   </li>

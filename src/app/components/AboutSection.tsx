@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="min-h-screen bg-gray-300 flex justify-center items-center py-10"
+      className="min-h-screen bg-transparent flex justify-center items-center py-10"
     >
       <motion.div
         className="container mx-auto text-center px-4 sm:px-6 md:px-10 lg:px-20"
@@ -19,7 +19,7 @@ const AboutSection: React.FC = () => {
         <h2 className="text-3xl font-bold text-orange-400 mt-10 mb-4">
           About Me
         </h2>
-        <p className="text-base sm:text-lg text-gray-600">
+        <p className="text-base sm:text-lg text-white">
           As a Computer Science student nearing the completion of my B.Sc., I
           bring a mix of technical knowledge and practical experience in digital
           media and marketing. My journey back to university in 2022 marked a

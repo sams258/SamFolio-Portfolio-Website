@@ -106,13 +106,18 @@ const ProjectsSection: React.FC = () => {
             </p>
           </motion.div>
         </div>
-        <div className="text-center mt-4">
-          <Link
-            href="/github"
-            className="text-teal-500 font-medium text-lg hover:text-teal-600 mt-4"
-          >
-            More projects...
-          </Link>
+        {/* More Projects Button */}
+        <div className="flex justify-center">
+          <button className="glassnav w-40 mt-6 md:mt-6 mb-6 hover:bg-transparent flex justify-center">
+            <div className="text-center mt-2 mb-2">
+              <Link
+                href="/github"
+                className="text-teal-500 font-medium text-lg hover:text-teal-600 mt-2"
+              >
+                More projects...
+              </Link>
+            </div>
+          </button>
         </div>
       </div>
     </motion.section>
