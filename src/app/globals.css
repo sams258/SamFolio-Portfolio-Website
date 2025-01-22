@@ -63,7 +63,13 @@ button {
 }
 
 .glass1 {
-  @apply backdrop-blur-xl bg-white/5 border border-white/15 rounded-lg p-6 shadow-lg;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 8px; 
+  z-index: 50; 
+  overflow: hidden; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .glassnav {
