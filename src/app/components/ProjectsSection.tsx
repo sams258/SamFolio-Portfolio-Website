@@ -108,7 +108,7 @@ const ProjectsSection: React.FC = () => {
         </div>
         {/* More Projects Button */}
         <div className="flex justify-center">
-          <button className="glassnav w-40 mt-6 md:mt-6 mb-6 hover:bg-transparent flex justify-center">
+          <button className="glassnav w-50 mt-6 md:mt-6 mb-6 hover:bg-transparent flex justify-center">
             <div className="text-center mt-2 mb-2">
               <Link
                 href="/github"

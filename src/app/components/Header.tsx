@@ -88,7 +88,7 @@ const Header: React.FC = () => {
 
         {/* Burger Menu Button */}
         <button
-          className="md:hidden bg-transparent text-orange-400 z-10"
+          className="md:hidden bg-transparent sm:bg-transparent text-orange-400 z-10"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
           <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="xl" />

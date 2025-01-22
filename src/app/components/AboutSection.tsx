@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="min-h-screen bg-transparent flex justify-center items-center py-10"
+      className="min-h-screen flex justify-center items-center py-10 bg-gradient-to-b from-teal-500 via-gray-800 to-teal-900"
     >
       <motion.div
         className="container mx-auto text-center px-4 sm:px-6 md:px-10 lg:px-20"
