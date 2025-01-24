@@ -22,6 +22,7 @@ A modern, visually stunning portfolio website built to showcase talent, creativi
 
 - **Next.js**: The backbone for fast and optimized UI.
 - **React**: Creating dynamic and interactive components.
+- **Framer Motion**: A modern animation library for JavaScript and React.
 - **CSS Modules**: Ensuring modular and maintainable styling.
 
 ### Backend
@@ -31,7 +32,7 @@ A modern, visually stunning portfolio website built to showcase talent, creativi
 
 ### Deployment
 
-- **Vercel**: Industry-leading deployment platform for the best performance.
+- **Vercel**: Industry-leading deployment platform for the best performance and latest technologies.
 
 ---
 
