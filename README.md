@@ -24,6 +24,7 @@ A modern, visually stunning portfolio website built to showcase talent, creativi
 - **React**: Creating dynamic and interactive components.
 - **Framer Motion**: A modern animation library for JavaScript and React.
 - **CSS Modules**: Ensuring modular and maintainable styling.
+- **Tailwind CSS**: A utility-first CSS framework for rapid and responsive design.
 
 ### Backend
 
