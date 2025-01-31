@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
               quality={100}
               unoptimized={true}
             />
-            <span className="ml-2 text-sm">Made by Next.js</span>
+            <span className="ml-2 text-sm">Powered by Next.js</span>
           </a>
         </div>
       </div>
