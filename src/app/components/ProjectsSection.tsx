@@ -109,7 +109,7 @@ const ProjectsSection: React.FC = () => {
         <div className="flex justify-center">
           <a
   href="/github"
-  className="glassnav w-50 mt-6 md:mt-6 mb-6 hover:bg-transparent flex justify-center text-teal-500 font-medium text-lg hover:text-teal-600 text-center py-2"
+  className="glassnav w-50 mt-6 md:mt-6 mb-6 hover:bg-transparent flex justify-center text-teal-500 font-medium text-lg hover:text-teal-600 text-center px-3 py-2"
 >
   More projects...
            </a>
