@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
       transition={{ duration: 1 }}
     >
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="text-center lg:text-left lg:w-1/2 sm:pl-4 lg:pl-25">
+        <div className="text-center lg:text-left lg:w-1/2 sm:pl-4 lg:pl-28">
           <h1 className="text-teal-500 text-4xl lg:text-5xl font-bold mb-4">
             Hi, I am <span className="text-orange-400">Sam</span>,
             <br />a dynamic and innovative{" "}
