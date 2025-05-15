@@ -19,9 +19,8 @@ export default function GitHubPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-
     window.scrollTo(0, 0);
-    
+
     const fetchProjects = async () => {
       try {
         const res = await fetch("/api/github");
@@ -60,9 +59,14 @@ export default function GitHubPage() {
                 key={project.id}
                 className="glass rounded-lg shadow-md p-6 hover:shadow-lg hover:translate-y-[-3px] transition-all duration-300 ease-in-out bg-gray-800 bg-opacity-80"
               >
-                <h2 className="text-xl font-semibold text-teal-400">
-                  {project.name}
-                </h2>
+                <a
+                  href={project.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl font-semibold text-teal-400 hover:underline"
+                >
+                  <h2>{project.name}</h2>
+                </a>
                 <p className="text-gray-300 mt-2">
                   {project.description || "No description available."}
                 </p>
