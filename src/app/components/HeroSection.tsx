@@ -45,7 +45,6 @@ const HeroSection: React.FC = () => {
             alt="Hero Image"
             width={600}
             height={400}
-            unoptimized={true}
             priority
             className="rounded-lg shadow-lg hero-image"
           />

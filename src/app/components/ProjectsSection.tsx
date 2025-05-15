@@ -30,7 +30,6 @@ const ProjectsSection: React.FC = () => {
               width={350}
               height={219}
               quality={100}
-              unoptimized={true}
               className="rounded mb-4"
             />
             <h3
@@ -57,7 +56,6 @@ const ProjectsSection: React.FC = () => {
               width={350}
               height={219}
               quality={100}
-              unoptimized={true}
               className="rounded mb-4"
             />
             <h3
@@ -87,7 +85,6 @@ const ProjectsSection: React.FC = () => {
               width={350}
               height={219}
               quality={100}
-              unoptimized={true}
               className="rounded mb-4"
             />
             <h3
