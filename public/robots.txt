@@ -7,3 +7,5 @@ Host: https://samfolio.se
 
 # Sitemaps
 Sitemap: https://samfolio.se/sitemap.xml
+
+Disallow: /samscv.pdf
