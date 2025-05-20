@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/samscv.pdf",
+        source: "/samscv0525.pdf",
         headers: [
           {
             key: "X-Robots-Tag",
