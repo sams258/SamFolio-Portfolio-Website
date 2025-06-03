@@ -20,7 +20,7 @@ const AboutSection: React.FC = () => {
           About Me
         </h2>
         <p className="text-base sm:text-lg text-white">
-          As a Computer Science student nearing the completion of my B.Sc., I
+          As a fresh Computer Science graduate with a B.Sc. in Software Engineering, I
           bring a mix of technical knowledge and practical experience in digital
           media and marketing. My journey back to university in 2022 marked a
           major personal and professional shift, requiring determination and
