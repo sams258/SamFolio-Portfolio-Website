@@ -31,8 +31,8 @@ const HeroSection: React.FC = () => {
               View My Work
             </a>
             <a
-              href="/samscv0825.pdf"
-              download="samscv0825.pdf"
+              href="/samscv082025.pdf"
+              download="samscv082025.pdf"
               className="px-6 py-3 bg-white border-2 border-orange-400 text-orange-400 font-bold rounded-lg shadow-md hover:bg-orange-400 hover:text-white hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-orange-200"
             >
               Download CV
