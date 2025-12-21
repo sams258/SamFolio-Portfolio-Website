@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    qualities: [100, 75],
+  },
   async headers() {
     return [
       {
@@ -21,15 +24,15 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      {
-        source: "/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=3600, must-revalidate",
-          },
-        ],
-      },
+{
+      source: "/(.*).(jpg|jpeg|png|webp|svg|gif|ico|woff|woff2|ttf|otf)",
+      headers: [
+        {
+          key: "Cache-Control",
+          value: "public, max-age=3600, must-revalidate",
+        },
+      ],
+    },
     ];
   },
 };

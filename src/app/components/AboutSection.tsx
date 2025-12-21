@@ -19,36 +19,17 @@ const AboutSection: React.FC = () => {
         <h2 className="text-3xl font-bold text-orange-400 mt-10 mb-4">
           About Me
         </h2>
-        <p className="text-base sm:text-lg text-white">
-          As a fresh Computer Science graduate with a B.Sc. in Software Engineering, 
-          I bring a blend of technical expertise and hands-on experience in digital 
-          transformation, data-driven decision-making, and user-centric solutions. 
-          My return to academia in 2022 was a pivotal move, reflecting resilience, 
-          adaptability, and a growth mindset—traits that fuel my passion for solving 
-          complex problems in fast-paced environments. 
-          I have a strong foundation in artificial intelligence (AI), machine learning 
-          (ML), and computer vision, with my thesis focusing on a &quot;Grid-based approach 
-          to parsing 2D screens for web interfaces&quot;. This research, integrating UI 
-          analysis, data modeling, and vision-language model (VLM) principles, not only 
-          advanced UI parsing accuracy but also positioned me at the intersection of 
-          human-computer interaction (HCI) and the future of large language models (LLMs). 
-          My work contributes to the next generation of multimodal AI systems, emphasizing 
-          scalability, automation, and intelligent user experiences.
-          I am passionate about leveraging cutting-edge technologies and I stay ahead of 
-          industry trends through continuous learning. My experience includes full-stack 
-          development, UX/UI design, data management, and content strategy, equipping 
-          me with a holistic view of how technology, design, and business intersect.
-          I thrive in agile, cross-functional teams, where I can contribute to innovative 
-          AI-driven solutions, optimize digital strategies, and deliver scalable, impactful 
-          results. My proficiency in problem-solving, critical thinking, and project management 
-          allows me to handle ambiguous challenges while aligning technical efforts with business 
-          objectives.
-          I aspire to join a dynamic, forward-thinking organization where I can drive digital 
-          transformation initiatives, enhance accessibility and UX, and contribute to building 
-          next-generation products that leverage the power of AI, automation, and emerging digital 
-          ecosystems. I am excited to collaborate with diverse, multidisciplinary teams to shape the 
-          future of intelligent digital experiences.
-        </p>
+        <div className="text-base sm:text-lg text-white">
+          I am a Computer Scientist with a unique &quot;Dual-Stack&quot; profile: 8 years of operational leadership in digital media backed by a distinction-level technical education.
+
+My current studies at Malmö University operate on two distinct but complementary tracks:
+
+In my Master&apos;s program, &quot;Innovation for Change in a Digital Society,&quot; I focus on the four pillars of modern tech: Innovation, Entrepreneurship, Digitalization, and Sustainability. Here, I explore why we build technology—focusing on ethics, social inclusion, and business viability.
+
+In parallel, I serve as a Research Assistant in the VIP Programme, where I focus on how to build it. I research Robotics and Edge AI, specifically designing &quot;Context Engines&quot; and modular architectures for autonomous mobility systems.
+
+The Professional Bridge: I bring this same duality to my professional life. My background as a Station Manager and Digital Specialist taught me to manage stakeholders and deadlines. My current research allows me to architect complex technical systems.
+        </div>
       </motion.div>
     </section>
   );
