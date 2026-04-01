@@ -19,16 +19,37 @@ const AboutSection: React.FC = () => {
         <h2 className="text-3xl font-bold text-orange-400 mt-10 mb-4">
           About Me
         </h2>
-        <div className="text-base sm:text-lg text-white">
-          I am a Computer Scientist with a unique &quot;Dual-Stack&quot; profile: 8 years of operational leadership in digital media backed by a distinction-level technical education.
-
-My current studies at Malmö University operate on two distinct but complementary tracks:
-
-In my Master&apos;s program, &quot;Innovation for Change in a Digital Society,&quot; I focus on the four pillars of modern tech: Innovation, Entrepreneurship, Digitalization, and Sustainability. Here, I explore why we build technology—focusing on ethics, social inclusion, and business viability.
-
-In parallel, I serve as a Research Assistant in the VIP Programme, where I focus on how to build it. I research Robotics and Edge AI, specifically designing &quot;Context Engines&quot; and modular architectures for autonomous mobility systems.
-
-The Professional Bridge: I bring this same duality to my professional life. My background as a Station Manager and Digital Specialist taught me to manage stakeholders and deadlines. My current research allows me to architect complex technical systems.
+        <div className="text-base sm:text-lg text-white space-y-4">
+          <p>
+            I am a Technology Strategy and Advisory specialist with 8+ years directing
+            large-scale digital transformation initiatives across international markets —
+            and someone who made a deliberate decision to go deeper. In 2022 I returned
+            to university, completed a BSc in Computer Science with Distinction, and am
+            now pursuing an MSc in Computer Science: Innovation for Change at Malmö
+            University.
+          </p>
+          <p>
+            My graduate work runs on two complementary tracks. In the Master&apos;s
+            programme I explore the <em>why</em> behind technology — Innovation,
+            Entrepreneurship, Digitalization, and Social Sustainability — building the
+            strategic framework that guides how organisations create lasting value in a
+            digital world. In parallel, through the VIP Research Programme, I work on
+            the <em>how</em> — designing Context Engines and modular AI architectures
+            for autonomous mobility systems using Edge AI and ROS2.
+          </p>
+          <p>
+            What ties it together is a rare dual perspective: the analytical mindset of
+            a practising engineer and the strategic instincts of someone who has spent
+            years translating technology into real business outcomes. I have led
+            cross-functional teams across 4 countries, grown digital platforms to over
+            1 million followers across 165 countries, and built products from first idea
+            through operational scale.
+          </p>
+          <p>
+            I work best as a trusted advisor — sitting between technical and business
+            teams, identifying where technology creates genuine value, and helping
+            organisations move forward with clarity and confidence.
+          </p>
         </div>
       </motion.div>
     </section>
