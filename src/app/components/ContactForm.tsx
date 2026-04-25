@@ -47,6 +47,7 @@ export default function ContactForm() {
         </div>
 
         <form className={styles.form} onSubmit={handleSubmit}>
+          <input type="hidden" name="_subject" value="New message from samfolio.se" />
           <label className={styles.formLabel}>
             Name
             <input
@@ -68,11 +69,11 @@ export default function ContactForm() {
             />
           </label>
           <label className={styles.formLabel}>
-            Subject
+            Topic
             <input
               className={styles.formInput}
               type="text"
-              name="subject"
+              name="topic"
               required
               placeholder="What's this about?"
             />

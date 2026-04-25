@@ -11,51 +11,43 @@ function scrollTo(id: string) {
 
 export default function Navbar() {
   const navRef = useRef<HTMLElement>(null);
-  const lastY = useRef(0);
   const isPinnedRef = useRef(false);
-  const pinTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  function show() {
-    if (navRef.current) navRef.current.style.transform = "translateY(0)";
-  }
-
-  function hide() {
-    if (navRef.current) navRef.current.style.transform = "translateY(-100%)";
-  }
-
-  function pin() {
-    if (pinTimerRef.current) clearTimeout(pinTimerRef.current);
-    isPinnedRef.current = true;
-    show();
-    pinTimerRef.current = setTimeout(() => {
-      isPinnedRef.current = false;
-      lastY.current = window.scrollY;
-    }, 800);
-  }
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
-    function onScroll() {
+    const handleScroll = () => {
       if (isPinnedRef.current) return;
-      const current = window.scrollY;
-      if (current > lastY.current && current > 80) {
-        hide();
+      const currentY = window.scrollY;
+      const nav = navRef.current;
+      if (!nav) return;
+      if (currentY <= 60) {
+        nav.style.transform = "translateY(0)";
+      } else if (currentY > lastScrollY.current) {
+        nav.style.transform = "translateY(-100%)";
       } else {
-        show();
+        nav.style.transform = "translateY(0)";
       }
-      lastY.current = current;
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      if (pinTimerRef.current) clearTimeout(pinTimerRef.current);
+      lastScrollY.current = currentY;
     };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  function handleNavClick(id: string) {
+    isPinnedRef.current = true;
+    if (navRef.current) navRef.current.style.transform = "translateY(0)";
+    scrollTo(id);
+    setTimeout(() => {
+      isPinnedRef.current = false;
+      lastScrollY.current = window.scrollY;
+    }, 1000);
+  }
 
   return (
     <nav ref={navRef} className={styles.nav}>
       <button
         className={styles.logo}
-        onClick={() => { pin(); scrollTo("home"); }}
+        onClick={() => handleNavClick("home")}
         aria-label="Back to top"
       >
         Sam <span className={styles.logoAccent}>El Saati</span>
@@ -67,8 +59,7 @@ export default function Navbar() {
               href={`#${s}`}
               onClick={(e) => {
                 e.preventDefault();
-                pin();
-                scrollTo(s);
+                handleNavClick(s);
               }}
             >
               {s}
