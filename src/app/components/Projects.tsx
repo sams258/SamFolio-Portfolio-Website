@@ -30,7 +30,7 @@ export default function Projects() {
           <div className={styles.type}>Featured · Healthcare Innovation</div>
           <h3>Vård Guide</h3>
           <p>
-            A WhatsApp-based healthcare navigation tool for newcomers in Sweden
+            A project I created with my innovation partner AL. Vård Guide is a WhatsApp-based healthcare navigation tool for newcomers in Sweden
             — no e-ID, no app download, no login required. Built on the insight
             that the crossing point should move to where people already are, not
             the other way around. Validated through fake-door testing and
