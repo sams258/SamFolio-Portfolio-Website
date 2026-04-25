@@ -20,10 +20,12 @@
   font-size: 1.25rem;
   color: var(--cream);
   letter-spacing: 0.02em;
+  white-space: nowrap;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .logo:focus-visible {
@@ -35,6 +37,7 @@
   color: var(--accent);
 }
 
+/* desktop links */
 .links {
   display: flex;
   gap: 2.5rem;
@@ -56,12 +59,100 @@
   color: var(--accent);
 }
 
-@media (max-width: 900px) {
+/* hamburger button (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 6px 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+/* mobile dropdown panel */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(14, 13, 12, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.dropdownList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownList li a {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 1.5rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: color 0.2s, background 0.2s;
+}
+
+.dropdownList li:last-child a {
+  border-bottom: none;
+}
+
+.dropdownList li a:hover {
+  color: var(--accent);
+  background: rgba(196, 154, 90, 0.05);
+}
+
+/* mid-size: tighten links so they fit without clipping */
+@media (min-width: 769px) and (max-width: 1024px) {
   .nav {
-    padding: 1.25rem 1.5rem;
+    padding: 1.25rem 2rem;
   }
 
   .links {
     gap: 1.5rem;
+  }
+
+  .links a {
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+  }
+}
+
+/* mobile: hamburger, hide inline links */
+@media (max-width: 768px) {
+  .nav {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }

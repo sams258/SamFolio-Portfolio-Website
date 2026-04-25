@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 
 const sections = ["about", "projects", "skills", "experience", "contact"];
@@ -13,7 +13,9 @@ export default function Navbar() {
   const navRef = useRef<HTMLElement>(null);
   const isPinnedRef = useRef(false);
   const lastScrollY = useRef(0);
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  // headroom
   useEffect(() => {
     const handleScroll = () => {
       if (isPinnedRef.current) return;
@@ -33,6 +35,21 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // click-outside closes the mobile menu
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent | TouchEvent) => {
+      if (menuOpen && navRef.current && !navRef.current.contains(e.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleOutsideClick);
+    document.addEventListener("touchstart", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+      document.removeEventListener("touchstart", handleOutsideClick);
+    };
+  }, [menuOpen]);
+
   function handleNavClick(id: string) {
     isPinnedRef.current = true;
     if (navRef.current) navRef.current.style.transform = "translateY(0)";
@@ -47,11 +64,13 @@ export default function Navbar() {
     <nav ref={navRef} className={styles.nav}>
       <button
         className={styles.logo}
-        onClick={() => handleNavClick("home")}
+        onClick={() => { setMenuOpen(false); handleNavClick("home"); }}
         aria-label="Back to top"
       >
         Sam <span className={styles.logoAccent}>El Saati</span>
       </button>
+
+      {/* desktop links */}
       <ul className={styles.links}>
         {sections.map((s) => (
           <li key={s}>
@@ -67,6 +86,40 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
+
+      {/* hamburger (mobile only) */}
+      <button
+        className={styles.hamburger}
+        onClick={() => setMenuOpen((prev) => !prev)}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={menuOpen}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      {/* mobile dropdown */}
+      {menuOpen && (
+        <div className={styles.dropdown}>
+          <ul className={styles.dropdownList}>
+            {sections.map((s) => (
+              <li key={s}>
+                <a
+                  href={`#${s}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMenuOpen(false);
+                    handleNavClick(s);
+                  }}
+                >
+                  {s}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
