@@ -61,10 +61,9 @@ export default function Projects() {
           </div>
           <h3>AI Systems for Accessible Transport</h3>
           <p>
-            Research assistant on a confidential VIP Programme project at Malmö
+            Research assistant on a VIP Programme project at Malmö
             University, applying AI and edge computing to autonomous mobility for
-            elderly and accessible passengers. Working across robotics, computer
-            vision, and multi-agent system design.
+            elderly and passengers with impairments. Working across robotics, IoT, and AI multi-agent system design.
           </p>
           <div className={styles.meta}>
             {project2Tags.map((t) => (
