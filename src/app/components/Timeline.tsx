@@ -5,7 +5,7 @@ const timelineItems = [
     date: "2025 — Present",
     org: "Malmö University",
     role: "Research Assistant, VIP Programme",
-    desc: "Research assistant on a confidential VIP Programme project focused on autonomous mobility for elderly and accessible passengers. Working across AI, robotics, and edge computing systems.",
+    desc: "Research assistant on a confidential VIP Programme project focused on autonomous mobility for elderly and passengers with impairments. Working across AI, robotics, and edge computing systems.",
   },
   {
     date: "2025 — 2027",
