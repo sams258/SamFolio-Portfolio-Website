@@ -1,9 +1,52 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import type { Metadata } from "next";
+import { DM_Serif_Display, Instrument_Sans, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
 import "./globals.css";
+
+const dmSerif = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://samfolio.se"),
+  title: "Sam El Saati — Technology Strategy & Engineering",
+  description:
+    "Research assistant, full-stack engineer, and MSc candidate at Malmö University. Building at the intersection of strategy and engineering.",
+  openGraph: {
+    title: "Sam El Saati — Portfolio",
+    description:
+      "Research assistant, full-stack engineer, and MSc candidate at Malmö University.",
+    url: "https://samfolio.se",
+    type: "website",
+    images: [{ url: "/og-image.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sam El Saati — Portfolio",
+    description:
+      "Research assistant, full-stack engineer, and MSc candidate at Malmö University.",
+    images: ["/og-image.jpg"],
+  },
+};
 
 export default function RootLayout({
   children,
@@ -11,41 +54,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${dmSerif.variable} ${instrumentSans.variable} ${jetbrainsMono.variable}`}
+    >
       <head>
-        <title>Samfolio - Portfolio of Sam</title>
-        <meta
-          name="description"
-          content="Welcome to Samfolio, the professional portfolio of Sam. Explore projects, skills, and achievements in web development and design."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Samfolio - Portfolio of Sam" />
-        <meta
-          property="og:description"
-          content="Welcome to Samfolio, showcasing projects, skills, and achievements."
-        />
-        <meta property="og:url" content="https://samfolio.se" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/og-image.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Samfolio - Portfolio of Sam" />
-        <meta
-          name="twitter:description"
-          content="Explore projects, skills, and achievements on Samfolio."
-        />
-        <meta name="twitter:image" content="/og-image.jpg" />
-        <link rel="icon" href="/favicon1.ico" />
+        <link rel="icon" href="/favicon.png" />
       </head>
       <body>
-        {/* Header at the top */}
-        <Header />
-
-        {/* Main content area */}
-        <main>{children}</main>
+        {children}
         <Analytics />
         <SpeedInsights />
-        {/* Footer at the bottom */}
-        <Footer />
       </body>
     </html>
   );

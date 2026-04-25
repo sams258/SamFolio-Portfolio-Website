@@ -1,0 +1,110 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5rem 4rem 5rem;
+  position: relative;
+  border-bottom: 1px solid var(--line);
+}
+
+.heroNumber {
+  position: absolute;
+  top: 50%;
+  right: 4rem;
+  transform: translateY(-50%);
+  font-family: var(--serif);
+  font-size: 22vw;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(196, 154, 90, 0.07);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--cream);
+  max-width: 820px;
+  margin-bottom: 2rem;
+}
+
+.heading em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.sub {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 480px;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.cta {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.btnPrimary {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--accent);
+  color: var(--black);
+  padding: 0.85rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  font-weight: 400;
+}
+
+.btnPrimary:hover {
+  background: var(--cream);
+  transform: translateY(-1px);
+}
+
+.btnGhost {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.85rem 2rem;
+  border: 1px solid var(--line);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btnGhost:hover {
+  color: var(--cream);
+  border-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 0 1.5rem 4rem;
+  }
+
+  .heroNumber {
+    right: 1.5rem;
+  }
+}

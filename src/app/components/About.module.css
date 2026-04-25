@@ -1,0 +1,140 @@
+.section {
+  padding: 5rem 4rem;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.label::after {
+  content: '';
+  flex: 1;
+  max-width: 80px;
+  height: 1px;
+  background: var(--line);
+}
+
+.heading {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.intro {
+  grid-column: 1 / -1;
+  max-width: 680px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.intro p strong {
+  color: var(--offwhite);
+  font-weight: 500;
+}
+
+.pillar {
+  background: var(--charcoal);
+  border: 1px solid var(--line);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.pillarNumber {
+  font-family: var(--serif);
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(196, 154, 90, 0.15);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.pillar h3 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  color: var(--cream);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.pillarSubtitle {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.pillar p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--charcoal-light);
+  color: var(--warm-grey);
+  background: var(--charcoal-deep);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .intro {
+    grid-column: 1;
+  }
+}

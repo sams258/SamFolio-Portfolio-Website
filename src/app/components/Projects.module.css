@@ -1,0 +1,144 @@
+.section {
+  padding: 5rem 4rem;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.label::after {
+  content: '';
+  flex: 1;
+  max-width: 80px;
+  height: 1px;
+  background: var(--line);
+}
+
+.heading {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: 3rem;
+}
+
+.card {
+  background: var(--charcoal-deep);
+  padding: 2.5rem;
+  transition: background 0.25s;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.card:hover {
+  background: var(--charcoal);
+}
+
+.featured {
+  grid-column: 1 / -1;
+  background: var(--charcoal);
+}
+
+.featured::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 100% 50%, var(--accent-glow), transparent 60%);
+  pointer-events: none;
+}
+
+.type {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  color: var(--cream);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.featured h3 {
+  font-size: 2.2rem;
+}
+
+.card p {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--charcoal-light);
+  color: var(--warm-grey);
+  background: var(--charcoal-deep);
+}
+
+.projectLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.projectLink:hover {
+  border-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

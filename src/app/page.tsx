@@ -1,25 +1,24 @@
-import React from "react";
-import Head from "next/head";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
-import "./globals.css";
-import "./fontawesome"
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Timeline from "./components/Timeline";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
-const HomePage: React.FC = () => {
+export default function Home() {
   return (
     <>
-      <Head>
-        <title>Home - Samfolio</title>
-        <meta name="description" content="Welcome to the homepage of Samfolio, where you can discover my latest projects and skills." />
-      </Head>
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-      </main>
+      <div className="grain" />
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Timeline />
+      <ContactForm />
+      <Footer />
     </>
   );
-};
-
-export default HomePage;
+}

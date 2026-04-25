@@ -1,99 +1,75 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* ========================================
-   Base Styling
-======================================== */
 :root {
-  --color-teal: #008080;
-  --color-orange: #ffa500;
-  --color-grey: #a9a9a9;
-  --color-orange-light: #ffd580;
-  --color-grey-dark: #696969;
+  --black: #0e0d0c;
+  --charcoal-deep: #141312;
+  --charcoal: #1c1a18;
+  --charcoal-mid: #252220;
+  --charcoal-light: #2e2b28;
+  --warm-grey: #6b6560;
+  --muted: #9c958e;
+  --offwhite: #e8e2da;
+  --cream: #f0ebe2;
+  --accent: #c49a5a;
+  --accent-dim: #8a6b3a;
+  --accent-glow: rgba(196, 154, 90, 0.12);
+  --line: rgba(196, 154, 90, 0.18);
+  --serif: var(--font-serif), Georgia, serif;
+  --sans: var(--font-sans), sans-serif;
+  --mono: var(--font-mono), monospace;
 }
 
-html,
-body {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensures body height matches viewport */
+  box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
-  @apply bg-gradient-to-tr from-grey-dark via-gray-800 to-grey text-gray-100 font-sans leading-relaxed;
 }
 
 body {
+  background: var(--black);
+  color: var(--offwhite);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 200px;
+}
+
+/* ensure section headings clear the fixed navbar when anchor-linked */
 section {
+  scroll-margin-top: 5rem;
 }
 
-a {
-  @apply text-orange hover:text-orange-light transition-all;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-bold leading-tight text-teal;
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
 }
 
-p {
-  @apply mb-4 text-grey-dark;
-}
-
-button {
-  @apply bg-teal hover:bg-orange text-white font-medium py-2 px-4 rounded transition-all;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* ========================================
-   Glassmorphism & Neumorphism
-======================================== */
-.glass {
-  @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-lg p-6 shadow-lg;
-}
-
-.glass1 {
-  background: rgba(96, 103, 113, 0.9);
-  backdrop-filter: blur(15px); 
-  -webkit-backdrop-filter: blur(15px); 
-  border-radius: 8px; 
-  z-index: 50; 
-  overflow: hidden; 
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.glassnav {
-  @apply backdrop-blur-xl bg-white/10 border border-white/15 rounded-lg shadow-lg;
-}
-
-.neumorphic {
-  @apply bg-grey rounded-lg shadow-md;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6),
-    -8px -8px 16px rgba(255, 255, 255, 0.1);
-}
-
-.neumorphic-hover:hover {
-  box-shadow: inset 8px 8px 16px rgba(0, 0, 0, 0.6),
-    inset -8px -8px 16px rgba(255, 255, 255, 0.1);
-}
-
-/* ========================================
-   Footer Styling
-======================================== */
-.footer {
-  @apply bg-grey-dark py-6 text-center text-sm text-gray-400;
-}
-
-.footer a {
-  @apply text-orange hover:text-orange-light;
-}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.25s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.55s; }

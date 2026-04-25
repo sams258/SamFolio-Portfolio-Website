@@ -1,0 +1,97 @@
+.section {
+  padding: 5rem 4rem;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.label::after {
+  content: '';
+  flex: 1;
+  max-width: 80px;
+  height: 1px;
+  background: var(--line);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.heading {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.intro p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.groupLabel {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--charcoal-light);
+  color: var(--offwhite);
+  background: var(--charcoal);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.pill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
