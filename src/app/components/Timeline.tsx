@@ -29,13 +29,13 @@ const timelineItems = [
     date: "2016 — 2021",
     org: "Total Media Cast",
     role: "Digital Media Specialist",
-    desc: "Cross-functional team across 4 countries. Grew digital presence to 1M+ followers across 165 countries. Client communication, quality, and international coordination.",
+    desc: "Grew digital presence to 1M+ followers across 165 countries. Cross-functional team across 4 countries. Client communication, quality, and international coordination.",
   },
   {
     date: "2012 — 2016",
     org: "LBI Radio",
     role: "Co-founder & Operations Director",
-    desc: "Built and ran an online radio network from scratch over 14 years. Full responsibility for technical infrastructure, team coordination, and day-to-day operations.",
+    desc: "Co-founded and built an online radio network in 2012, growing it to 500,000 unique monthly listeners. Still running today alongside sister stations - now in its 14th year.",
   },
 ];
 
