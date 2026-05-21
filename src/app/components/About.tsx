@@ -27,7 +27,7 @@ export default function About() {
       <div className={styles.grid}>
         <div className={styles.intro}>
           <p>
-            I came to technology from a dual background in{" "}
+            Full-stack engineer and researcher. I came to technology from a dual background in{" "}
             <strong>business and self-directed engineering</strong>, spending 14
             years building and running digital platforms before returning to
             university in 2022 to formalise and deepen my expertise. Based in
