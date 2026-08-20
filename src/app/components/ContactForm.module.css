@@ -48,6 +48,13 @@
   margin-bottom: 1.5rem;
 }
 
+.languages {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--accent-dim);
+}
+
 .form {
   display: flex;
   flex-direction: column;

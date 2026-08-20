@@ -2,40 +2,40 @@ import styles from "./Timeline.module.css";
 
 const timelineItems = [
   {
-    date: "2025 — Present",
-    org: "Malmö University",
-    role: "Research Assistant, VIP Programme",
-    desc: "Research assistant on a confidential VIP Programme project focused on autonomous mobility for elderly and passengers with impairments. Working across AI, IoT, robotics, and edge computing systems.",
-  },
-  {
     date: "2025 — 2027",
     org: "Malmö University",
     role: "MSc Computer Science",
-    desc: "Innovation for Change in a Digital Society. Cohort student representative. Focus on innovation, entrepreneurship, digitalization, and social sustainability.",
+    desc: "Innovation for Change in a Digital Society. 60 advanced-level credits completed. Four A grades and one B in the first year. Class representative for the programme. Thesis year 2026–27.",
   },
   {
-    date: "2023 — 2024",
-    org: "Kristianstad University",
-    role: "Teaching Assistant, CS Department",
-    desc: "Supported practical sessions for groups up to 60 students. Developed supporting materials and guided hands-on coursework.",
+    date: "Oct 2025 — Jun 2026",
+    org: "Malmö University",
+    role: "Research Assistant, CareRide",
+    desc: "Vertically Integrated Projects Programme · Sustainable Digitalisation Research Centre.",
   },
   {
     date: "2022 — 2025",
     org: "Kristianstad University",
-    role: "BSc Computer Science — Distinction",
-    desc: "Thesis: 'A Grid-Based Approach to Parsing 2D Screens for Web Interfaces.' Graduated with Distinction.",
+    role: "BSc Computer Science, Software Development",
+    desc: "180 credits, degree completed. Degree project graded Pass with distinction (5).",
   },
   {
-    date: "2016 — 2021",
-    org: "Total Media Cast",
-    role: "Digital Media Specialist",
-    desc: "Grew digital presence to 1M+ followers across 165 countries. Cross-functional team across 4 countries. Client communication, quality, and international coordination.",
+    date: "Aug 2023 — Jul 2024",
+    org: "Kristianstad University",
+    role: "Teaching Assistant, Department of Computer Science",
+    desc: "Mathematics Fundamentals (MA101C), Fundamental Programming (DA110I), Introduction to Computer Science (DA100D).",
   },
   {
-    date: "2012 — 2016",
-    org: "LBI Radio",
-    role: "Co-founder & Operations Director",
-    desc: "Co-founded and built an online radio network in 2012, growing it to 500,000 unique monthly listeners. Still running today alongside sister stations - now in its 14th year.",
+    date: "2022 — Present",
+    org: "Albal Radio",
+    role: "Founder and developer",
+    desc: "Live radio application for Android and iOS built in Flutter, in continuous operation since launch.",
+  },
+  {
+    date: "1998 — 2001",
+    org: "Lebanese University",
+    role: "Business Marketing and Management",
+    desc: "Approximately 180 ECTS.",
   },
 ];
 

@@ -1,20 +1,16 @@
 import styles from "./About.module.css";
 
 const pillar1Tags = [
-  "Innovation",
-  "Entrepreneurship",
-  "Digitalization",
-  "Social Sustainability",
-  "Ethics",
-  "Human-Centred Design",
+  "Software Development",
+  "Degree Project — Pass with Distinction",
+  "Business Marketing & Management",
 ];
 
 const pillar2Tags = [
-  "ROS2",
-  "Edge AI",
-  "Computer Vision",
-  "Multi-Agent Systems",
-  "Robotics",
+  "Digital Transformation",
+  "Cross-Functional Leadership",
+  "International Markets",
+  "Technology Adoption",
 ];
 
 export default function About() {
@@ -22,35 +18,39 @@ export default function About() {
     <section className={styles.section} id="about">
       <div className={styles.label}>About</div>
       <div className={styles.heading}>
-        Two tracks.<br />One direction.
+        Why the long<br />route matters.
       </div>
       <div className={styles.grid}>
         <div className={styles.intro}>
           <p>
-            Full-stack engineer and researcher. I came to technology from a dual background in{" "}
-            <strong>business and self-directed engineering</strong>, spending 14
-            years building and running digital platforms before returning to
-            university in 2022 to formalise and deepen my expertise. Based in
-            Skåne, I now work across two parallel tracks — both grounded in the
-            same belief that{" "}
-            <strong>
-              technology only creates value when it fits the human and
-              organisational context it lives in.
-            </strong>
+            My path to computer science research runs through two other
+            degrees and fourteen years outside a university. I studied{" "}
+            <strong>Business Marketing and Management</strong> at Lebanese
+            University before spending over a decade directing digital
+            transformation work across international markets, then returned
+            to formal study in 2022 — first for a{" "}
+            <strong>BSc in Computer Science</strong>, now an{" "}
+            <strong>MSc at Malmö University</strong> focused on the systems
+            research below. The route was long, but it is why the exclusion
+            and adoption side of the work is empirical rather than
+            theoretical.
           </p>
         </div>
 
         <div className={styles.pillar}>
           <div className={styles.pillarNumber}>01</div>
-          <h3>The Strategic Framework</h3>
+          <h3>Academic Foundations</h3>
           <div className={styles.pillarSubtitle}>
-            MSc · Innovation for Change in a Digital Society
+            BSc Computer Science · Kristianstad University
           </div>
           <p>
-            My Master&apos;s at Malmö University builds the <em>why</em> behind
-            technology decisions — innovation, entrepreneurship, digitalization,
-            and social sustainability. I apply this framework to understand where
-            technology creates lasting value and where it falls short.
+            180 credits over three years on the Software Development track,
+            degree completed in 2025. The degree project — a grid-based
+            approach to parsing 2D web interfaces — was graded Pass with
+            distinction (5). It followed an earlier degree in Business
+            Marketing and Management at Lebanese University, roughly 180
+            ECTS, which is where the business and organisational half of the
+            research interest started.
           </p>
           <div className={styles.tags}>
             {pillar1Tags.map((t) => (
@@ -63,16 +63,18 @@ export default function About() {
 
         <div className={styles.pillar}>
           <div className={styles.pillarNumber}>02</div>
-          <h3>The Technical Application</h3>
+          <h3>Returning by Design</h3>
           <div className={styles.pillarSubtitle}>
-            VIP Research Programme · Autonomous Mobility
+            14 Years · Four Countries
           </div>
           <p>
-            Through the VIP Research Programme, I work on the <em>how</em> —
-            applying AI, robotics, and edge computing to real autonomous mobility
-            challenges, with a focus on accessibility and social inclusion. The
-            work is confidential but the direction is clear: technology that
-            adapts to people, not the other way around.
+            Before returning to university, I spent over a decade directing
+            digital transformation for international media brands — leading
+            cross-functional teams across four countries, and seeing
+            first-hand which systems people actually adopted and which ones
+            they quietly worked around. That gap, between what a system is
+            designed to do and what excluded users actually do with it, is
+            the empirical starting point for the research position above.
           </p>
           <div className={styles.tags}>
             {pillar2Tags.map((t) => (

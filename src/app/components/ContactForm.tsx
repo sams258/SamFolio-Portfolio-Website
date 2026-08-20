@@ -36,14 +36,23 @@ export default function ContactForm() {
       <div className={styles.layout}>
         <div className={styles.copy}>
           <div className={styles.heading}>
-            Let&apos;s build<br />something real.
+            Let&apos;s talk<br />research.
           </div>
           <p>
-            I&apos;m open to roles, research collaborations, and conversations
-            at the intersection of technology strategy and engineering —
-            particularly in the Skåne/Öresund region.
+            I&apos;m seeking a funded PhD position in self-adaptive systems,
+            human-in-the-loop architectures, and the design and evaluation
+            of systems for users the default design excludes. I&apos;m glad
+            to hear from research groups, potential supervisors, and
+            collaborators working on adjacent questions.
           </p>
-          <p>Full working rights in Sweden. No sponsorship required.</p>
+          <p>
+            Full working rights in Sweden — no sponsorship required. Based
+            in Eslöv, Skåne; relocating to Växjö in November 2026.
+          </p>
+          <p className={styles.languages}>
+            Arabic (native) · English (professional) · Swedish (beginner,
+            SFI level C, in active study)
+          </p>
         </div>
 
         <form className={styles.form} onSubmit={handleSubmit}>

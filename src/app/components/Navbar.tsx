@@ -3,7 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 
-const sections = ["about", "projects", "skills", "experience", "contact"];
+const sections = [
+  "research",
+  "projects",
+  "dissemination",
+  "methods",
+  "experience",
+  "contact",
+];
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

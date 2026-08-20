@@ -11,27 +11,29 @@ export default function Hero() {
     <section className={styles.hero} id="home">
       <div className={styles.heroNumber}>S</div>
       <div className={`${styles.eyebrow} fade-up`}>
-        Technology Strategy & Advisory · Skåne, Sweden
+        MSc Computer Science · Malmö University · Skåne, Sweden
       </div>
       <h1 className={`${styles.heading} fade-up delay-1`}>
-        Building things that <em>matter</em>,<br />
-        at the edge of strategy<br />
-        and engineering.
+        Systems that know the limits<br />
+        of their own <em>competence</em>.
       </h1>
       <p className={`${styles.sub} fade-up delay-2`}>
-        Research assistant, full-stack engineer, and MSc candidate at Malmö
-        University. I work where hard technical problems meet real human needs.
+        I work on systems that adapt within the limits of their own
+        competence and hand control back to a person at the boundary of it
+        — how they should be elicited, architected and evaluated,
+        particularly when the intended users are people the default design
+        excludes.
       </p>
       <div className={`${styles.cta} fade-up delay-3`}>
         <a
           className={styles.btnPrimary}
-          href="#projects"
+          href="#research"
           onClick={(e) => {
             e.preventDefault();
-            scrollTo("projects");
+            scrollTo("research");
           }}
         >
-          View Work
+          Research
         </a>
         <a
           className={styles.btnGhost}

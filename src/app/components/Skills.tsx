@@ -2,72 +2,63 @@ import styles from "./Skills.module.css";
 
 const skillGroups = [
   {
-    label: "AI & Research",
+    label: "Research Methods",
     skills: [
-      "Multi-Agent AI",
-      "LLM Integration",
-      "Anthropic API",
-      "ROS2",
-      "YOLOv8",
-      "TinyML",
-      "Edge AI",
-      "Autoware",
+      "Requirements Elicitation",
+      "Stakeholder Interviews",
+      "Co-Creation Workshops",
+      "Semi-Structured Interviewing",
+      "Affinity Analysis",
+      "Experiment & Hypothesis Design",
+      "Wizard-of-Oz Studies",
+      "Scenario-Based Simulation",
+      "Literature Review & Gap Analysis",
+      "Bias & Validity Assessment",
+      "Design Research Methodology",
+      "Technology Adoption Analysis (Davis, Rogers)",
     ],
   },
   {
-    label: "Engineering",
+    label: "Software & Systems",
     skills: [
       "Python",
+      "TypeScript",
       "JavaScript",
+      "Node.js",
+      "SQL",
+      "Flutter",
       "React",
       "Next.js",
-      "Node.js",
-      "Flutter",
-      "C#",
-      "SQL",
-    ],
-  },
-  {
-    label: "Data & Infrastructure",
-    skills: [
       "MongoDB",
       "Firebase",
-      "PostgreSQL",
-      "PySpark",
-      "Hadoop",
-      "Vercel",
-      "Linux/Ubuntu",
-      "CI/CD",
     ],
   },
   {
-    label: "Innovation Methods",
-    skills: [
-      "Assumption Mapping",
-      "Service Blueprints",
-      "Journey Maps",
-      "HMW Ideation",
-      "MVE / Pretotyping",
-      "BMC",
-      "NABC",
-      "PESTLE",
-    ],
+    label: "Architecture & Data",
+    skills: ["UML Modelling", "Hadoop", "PySpark", "Distributed Data Processing"],
+  },
+  {
+    label: "Computer Vision",
+    skills: ["OpenCV", "YOLOv8", "Tesseract", "Selenium"],
   },
 ];
 
 export default function Skills() {
   return (
-    <section className={styles.section} id="skills">
+    <section className={styles.section} id="methods">
       <div className={styles.label}>Capabilities</div>
       <div className={styles.layout}>
         <div className={styles.intro}>
           <div className={styles.heading}>
-            Deep stack.<br />Wider lens.
+            Method and<br />machinery.
           </div>
           <p>
-            My technical foundation spans the full stack from embedded edge
-            systems to cloud-deployed LLM pipelines. What makes it useful is the
-            layer above it — knowing which tool to reach for, and why.
+            The research position depends on being able to build the systems
+            it studies, not just describe them. I pair the methods below
+            with the engineering to prototype, instrument and evaluate
+            systems directly — including AI-assisted development as an
+            established part of the workflow, from pipeline scaffolding to
+            literature synthesis.
           </p>
         </div>
         <div className={styles.groups}>

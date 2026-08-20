@@ -90,6 +90,19 @@
   font-size: 2.2rem;
 }
 
+.metaBlock {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: var(--warm-grey);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.metaBlock div:first-child {
+  color: var(--muted);
+}
+
 .card p {
   font-size: 0.875rem;
   color: var(--muted);

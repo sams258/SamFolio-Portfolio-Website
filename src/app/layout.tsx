@@ -28,22 +28,22 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://samfolio.se"),
-  title: "Sam El Saati — Technology Strategy & Engineering",
+  title: "Samir El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
   description:
-    "Research assistant, full-stack engineer, and MSc candidate at Malmö University. Building at the intersection of strategy and engineering.",
+    "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
   openGraph: {
-    title: "Sam El Saati — Portfolio",
+    title: "Samir El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
     description:
-      "Research assistant, full-stack engineer, and MSc candidate at Malmö University.",
+      "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
     url: "https://samfolio.se",
     type: "website",
     images: [{ url: "/og-image.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sam El Saati — Portfolio",
+    title: "Samir El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
     description:
-      "Research assistant, full-stack engineer, and MSc candidate at Malmö University.",
+      "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
     images: ["/og-image.jpg"],
   },
 };

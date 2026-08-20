@@ -125,16 +125,16 @@
 /* mid-size: tighten links so they fit without clipping */
 @media (min-width: 769px) and (max-width: 1024px) {
   .nav {
-    padding: 1.25rem 2rem;
+    padding: 1.25rem 1.5rem;
   }
 
   .links {
-    gap: 1.5rem;
+    gap: 1.1rem;
   }
 
   .links a {
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
   }
 }
 
