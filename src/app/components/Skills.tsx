@@ -41,6 +41,16 @@ const skillGroups = [
     label: "Computer Vision",
     skills: ["OpenCV", "YOLOv8", "Tesseract", "Selenium"],
   },
+  {
+    label: "Media & Audio",
+    skills: [
+      "Streaming Infrastructure",
+      "Audio Production",
+      "Music Curation",
+      "Flutter",
+      "Audience Analytics",
+    ],
+  },
 ];
 
 export default function Skills() {

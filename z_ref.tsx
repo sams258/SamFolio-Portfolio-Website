@@ -221,20 +221,55 @@ export default function ReferencePage() {
         </div>
       </section>
 
-      {/* Technical Projects */}
-      <section id="technical" className="technical">
-        <div className="label">Technical Projects</div>
+      {/* Independent Work */}
+      <section id="independent-work" className="independent-work">
+        <div className="label">Independent Work</div>
+        <h2>
+          Built and run
+          <br />
+          end to end.
+        </h2>
+        <article className="featured">
+          <h3>Albal Radio (عالبال)</h3>
+          <p className="meta">
+            Founder, developer and operator · 2022 to present · Timeless
+            Arabic Music
+          </p>
+          <div className="metrics">
+            <div>
+              81,600+
+              <br />
+              Monthly Listeners
+            </div>
+            <div>
+              169
+              <br />
+              Countries
+            </div>
+            <div>
+              46K
+              <br />
+              Hours Streamed
+            </div>
+            <div>
+              33.7 min
+              <br />
+              Average Session
+            </div>
+          </div>
+          <p className="caption">
+            April 2026 · four feeds combined · 99.92% verified human traffic
+            after bot filtering
+          </p>
+        </article>
         <article>
           <h3>Amazon Reviews Analysis: iOS versus Android</h3>
           <p className="meta">
             Big Data Analytics · DA381A · 7.5 credits · Kristianstad
-            University · Autumn 2024 · Pass with distinction (5) ·
+            University · Autumn 2024 · Pass with distinction (5)
+            <br />
             Co-author: Mohamad Alloush · Examiner: Ali Hassan Sodhro
           </p>
-        </article>
-        <article>
-          <h3>Albal Radio</h3>
-          <p className="meta">Founder and developer · 2022 to present</p>
         </article>
       </section>
 

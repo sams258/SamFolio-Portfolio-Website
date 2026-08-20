@@ -4,7 +4,7 @@ import Research from "./components/Research";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Dissemination from "./components/Dissemination";
-import TechnicalProjects from "./components/TechnicalProjects";
+import IndependentWork from "./components/IndependentWork";
 import Skills from "./components/Skills";
 import Timeline from "./components/Timeline";
 import ContactForm from "./components/ContactForm";
@@ -20,7 +20,7 @@ export default function Home() {
       <About />
       <Projects />
       <Dissemination />
-      <TechnicalProjects />
+      <IndependentWork />
       <Skills />
       <Timeline />
       <ContactForm />

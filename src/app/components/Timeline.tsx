@@ -28,8 +28,8 @@ const timelineItems = [
   {
     date: "2022 — Present",
     org: "Albal Radio",
-    role: "Founder and developer",
-    desc: "Live radio application for Android and iOS built in Flutter, in continuous operation since launch.",
+    role: "Founder, developer and operator",
+    desc: "Global Arabic oldies radio network: streaming infrastructure, four feeds, Flutter applications for Android and iOS, music curation and jingle production. 81,600+ monthly listeners across 169 countries.",
   },
   {
     date: "1998 — 2001",
