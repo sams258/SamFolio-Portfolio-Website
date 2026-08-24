@@ -47,11 +47,10 @@ export default function ContactForm() {
           </p>
           <p>
             Full working rights in Sweden — no sponsorship required. Based
-            in Eslöv, Skåne; relocating to Växjö in November 2026.
+            in Eslöv, Skåne.
           </p>
           <p className={styles.languages}>
-            Arabic (native) · English (professional) · Swedish (beginner,
-            SFI level C, in active study)
+            Arabic (native) · English (professional) · Swedish (beginner)
           </p>
         </div>
 

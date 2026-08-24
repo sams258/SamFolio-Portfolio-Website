@@ -28,11 +28,11 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://samfolio.se"),
-  title: "Samir El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
+  title: "Sam El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
   description:
     "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
   openGraph: {
-    title: "Samir El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
+    title: "Sam El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
     description:
       "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
     url: "https://samfolio.se",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samir El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
+    title: "Sam El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
     description:
       "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
     images: ["/og-image.jpg"],

@@ -349,11 +349,10 @@ export default function ReferencePage() {
         </p>
         <p>
           Full working rights in Sweden — no sponsorship required. Based in
-          Eslöv, Skåne; relocating to Växjö in November 2026.
+          Eslöv, Skåne.
         </p>
         <p className="languages">
-          Arabic (native) · English (professional) · Swedish (beginner, SFI
-          level C, in active study)
+          Arabic (native) · English (professional) · Swedish (beginner)
         </p>
       </section>
 
