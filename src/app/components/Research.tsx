@@ -49,7 +49,8 @@ export default function Research() {
         Currently completing an MSc in Computer Science at Malmö University —
         60 advanced-level credits, four A grades and one B in the first
         year, class representative for the programme. Thesis year
-        2026–27. Seeking a funded PhD position.
+        2026–27. Interested in applied research collaborations and future
+        PhD opportunities.
       </p>
     </section>
   );

@@ -89,7 +89,8 @@ export default function ReferencePage() {
           Currently completing an MSc in Computer Science at Malmö
           University — 60 advanced-level credits, four A grades and one B
           in the first year, class representative for the programme.
-          Thesis year 2026–27. Seeking a funded PhD position.
+          Thesis year 2026–27. Interested in applied research collaborations
+          and future PhD opportunities.
         </p>
       </section>
 
@@ -341,11 +342,10 @@ export default function ReferencePage() {
           research.
         </h2>
         <p>
-          I&apos;m seeking a funded PhD position in self-adaptive systems,
-          human-in-the-loop architectures, and the design and evaluation of
-          systems for users the default design excludes. I&apos;m glad to
-          hear from research groups, potential supervisors, and
-          collaborators working on adjacent questions.
+          I&apos;m interested in thesis collaborations, research projects and
+          future PhD opportunities around autonomous and human-centred
+          systems. I&apos;m glad to hear from teams working on adjacent
+          questions.
         </p>
         <p>
           Full working rights in Sweden — no sponsorship required. Based in

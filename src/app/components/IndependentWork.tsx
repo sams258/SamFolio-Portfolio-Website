@@ -10,6 +10,8 @@ const albalTags = [
   "Audience Analytics",
 ];
 
+const smbTags = ["Python", "LLM APIs", "Ollama", "JSON", "DuckDB"];
+
 const amazonTags = [
   "Hadoop",
   "PySpark",
@@ -79,6 +81,30 @@ export default function IndependentWork() {
 
           <div className={styles.meta}>
             {albalTags.map((t) => (
+              <span key={t} className={styles.tag}>
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* SMB Pain Point Miner */}
+        <div className={styles.card}>
+          <div className={styles.type}>Independent Project</div>
+          <h3>SMB Pain Point Miner</h3>
+          <div className={styles.metaBlock}>
+            <div>Independent LLM project · 2026</div>
+          </div>
+          <p>
+            Built a Python pipeline that collects public discussions,
+            extracts structured information using local and hosted language
+            models, validates the output against a fixed JSON structure and
+            stores the results in DuckDB. The first local implementation
+            using Ollama was too slow for practical scaling, which led me to
+            test hosted inference through Groq and Gemini.
+          </p>
+          <div className={styles.meta}>
+            {smbTags.map((t) => (
               <span key={t} className={styles.tag}>
                 {t}
               </span>

@@ -39,11 +39,10 @@ export default function ContactForm() {
             Let&apos;s talk<br />research.
           </div>
           <p>
-            I&apos;m seeking a funded PhD position in self-adaptive systems,
-            human-in-the-loop architectures, and the design and evaluation
-            of systems for users the default design excludes. I&apos;m glad
-            to hear from research groups, potential supervisors, and
-            collaborators working on adjacent questions.
+            I&apos;m interested in thesis collaborations, research projects
+            and future PhD opportunities around autonomous and
+            human-centred systems. I&apos;m glad to hear from teams working
+            on adjacent questions.
           </p>
           <p>
             Full working rights in Sweden — no sponsorship required. Based

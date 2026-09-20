@@ -30,11 +30,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://samfolio.se"),
   title: "Sam El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
   description:
-    "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
+    "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Interested in applied research collaborations and future PhD opportunities.",
   openGraph: {
     title: "Sam El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
     description:
-      "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
+      "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Interested in applied research collaborations and future PhD opportunities.",
     url: "https://samfolio.se",
     type: "website",
     images: [{ url: "/og-image.jpg" }],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sam El Saati — Self-Adaptive Systems & Human-in-the-Loop Design",
     description:
-      "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Seeking a funded PhD position.",
+      "MSc Computer Science candidate at Malmö University. Research on systems that adapt within the limits of their own competence and hand control back to a person at the boundary of it. Interested in applied research collaborations and future PhD opportunities.",
     images: ["/og-image.jpg"],
   },
 };

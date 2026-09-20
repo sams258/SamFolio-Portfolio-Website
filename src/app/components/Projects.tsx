@@ -103,7 +103,8 @@ export default function Projects() {
             </div>
           </div>
           <p>
-            Sole software engineer on a two-person project team designing an
+            Sole software engineering researcher in a four-person research
+            team designing an
             autonomous special transport service for elderly users and
             people with disabilities, addressing the cost, availability and
             stigma limitations of existing services such as Färdtjänst.
