@@ -20,7 +20,7 @@ export default function Hero() {
       <p className={`${styles.sub} fade-up delay-2`}>
         I work on systems that adapt within the limits of their own
         competence and hand control back to a person at the boundary of it
-        — how they should be elicited, architected and evaluated,
+        — how they should be designed, built and evaluated,
         particularly when the intended users are people the default design
         excludes.
       </p>

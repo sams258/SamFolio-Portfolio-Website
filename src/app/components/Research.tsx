@@ -30,8 +30,8 @@ export default function Research() {
       </div>
       <p className={`${styles.lead} fade-up delay-2`}>
         The position emerged independently across three projects in three
-        domains. My interest is in how such systems should be elicited,
-        architected and evaluated, particularly when the intended users are
+        domains. My interest is in how such systems should be designed,
+        built and evaluated, particularly when the intended users are
         people the default design excludes.
       </p>
 

@@ -34,7 +34,7 @@ export default function ReferencePage() {
         <p>
           I work on systems that adapt within the limits of their own
           competence and hand control back to a person at the boundary of
-          it — how they should be elicited, architected and evaluated,
+          it — how they should be designed, built and evaluated,
           particularly when the intended users are people the default
           design excludes.
         </p>
@@ -54,8 +54,8 @@ export default function ReferencePage() {
         </h2>
         <p>
           The position emerged independently across three projects in three
-          domains. My interest is in how such systems should be elicited,
-          architected and evaluated, particularly when the intended users
+          domains. My interest is in how such systems should be designed,
+          built and evaluated, particularly when the intended users
           are people the default design excludes.
         </p>
         <div className="grid">
